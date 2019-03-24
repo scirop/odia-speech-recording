@@ -30,10 +30,6 @@ def welcome():
     else:
         return render_template("welcome.html")
 
-@app.route("/legal")
-def legal():
-    return render_template("legal.html")
-
 @app.route("/start")
 def start():
     response = make_response(redirect('/'))
